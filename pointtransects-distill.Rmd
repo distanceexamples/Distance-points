@@ -44,7 +44,7 @@ The fields of the `Savannah_sparrow_1980` data set are:
 
 + Region.Label - three pastures that constituted sections of the study area.  However, for this vignette we are going to make all labels identical.  This will treat the data as if they were all detected in the same pasture.  The matter of stratification will be taken up in another vignette.
 + Area - size of the study region. A place holder, because pasture sizes are not known.  Estimates of density and abundance will be equivalent. 
-+ Sample.Label - point transect identifier (total of 273)
++ Sample.Label - point transect identifier (total of 373 points)
 + Effort - number of visits to each point
 + object - unique identifier for each detected savanna sparrow
 + distance - radial distance (metres) to each detection
