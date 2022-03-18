@@ -113,7 +113,7 @@ Details about the arguments for this function:
   - do not include adjustment terms
 + `transect="point"`
   - necessary to indicate this is point transect data
-+ `convert.units=conversion.factor` 
++ `convert_units=conversion.factor` 
   - required because, for this example, the radial distances are in metres .  Our density estimates will be reported in number of birds per hectare.
 + `truncation="5%"`
   - right truncation (described below)
@@ -122,7 +122,7 @@ As is customary, right truncation is employed to remove 5\% of the observations 
 
 ```{r}
 sasp.hn <- ds(data=Savannah_sparrow_1980, key="hn", adjustment=NULL,
-              transect="point", convert.units=conversion.factor, truncation="5%")
+              transect="point", convert_units=conversion.factor, truncation="5%")
 ```
 
 On calling the `ds` function, information is provided to the screen reminding the user what model has been fitted and the associated AIC value. More information is supplied by applying the `summary()` function to the object created by `ds()`.
@@ -156,14 +156,14 @@ To fit a uniform key function with cosine adjustment terms, use the command:
 
 ```{r}
 sasp.unif.cos <- ds(Savannah_sparrow_1980, key="unif", adjustment="cos",
-                    transect="point", convert.units=conversion.factor, truncation="5%")
+                    transect="point", convert_units=conversion.factor, truncation="5%")
 ```
 
 To fit a hazard rate key function with simple polynomial adjustment terms, then use the command:
 
 ```{r}
 sasp.hr.poly <- ds(Savannah_sparrow_1980, key="hr", adjustment="poly", 
-                   transect="point", convert.units=conversion.factor, truncation="5%")
+                   transect="point", convert_units=conversion.factor, truncation="5%")
 ```
 
 # Model comparison
